@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.logo{
+    width: 400px;
+    height: 120px;
+}
+
+span{
+    color: orange;
+}
+.experience{
+    background: #eff4fd;
+    width: 100%;
+    padding: 100px 0px;  
+}
+.title h2{
+    color: black;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 430px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(224, 104, 34);
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: rgb(224, 104, 34);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(224, 104, 34);
+    cursor: pointer;
+}

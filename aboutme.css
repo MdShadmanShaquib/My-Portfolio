@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    display: flex;
+    background: url(images/PicsArt_12-03-11.17.02.jpg) no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+nav{
+   position: fixed;
+   width: 91%;
+   padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    padding: 45px 0;
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+nav ul li a:hover{
+    color: red;
+}
+.logo{
+    margin: 0px 150px;
+    width: 400px;
+    height: 130px;
+}
+.details{
+    padding-left: 49%;
+    margin: 300px 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px; 
+    font-family: serif;
+}
+.button{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 9px 15px;
+    border-radius: 30px;
+    transition: .4s;
+    font-family: serif;
+}
+.button:hover{
+    background-color: transparent;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+

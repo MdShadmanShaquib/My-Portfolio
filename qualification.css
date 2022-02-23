@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.logo{
+    width: 400px;
+    height: 120px;
+}
+.heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+.timeline{
+    display: block;
+    width: 70%;
+    margin: 100px auto;
+
+}
+.timeline .heading{
+    margin-bottom: 150px;
+
+}
+.card{
+    width: 41%;
+    padding: 30px;
+    border-radius: 10px;
+    color: black;
+    display: block;
+    margin: -65px 0px;
+    position: relative;
+    background: #f00;
+
+}
+.card:nth-child(even){
+    margin-left: auto;
+}
+.card:nth-child(even):before{
+    content: '';
+    position: absolute;
+    left: -13%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+.card:nth-child(even):after{
+    content: '';
+    position: absolute;
+    left: -8.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10%;
+    height: 2px;
+    background: black;
+    z-index: -1;
+}
+.card:nth-child(odd)::before{
+    content: '';
+    position: absolute;
+    right: -13%;
+    top: 50%;
+    transform: translateY(-30%);
+    width: 25px;
+    height: 25px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+.card:nth-child(odd)::after{
+    content: '';
+    position: absolute;
+    right: -8.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10%;
+    height: 2px;
+    background: black;
+    z-index: -1;
+}
+.card:nth-child(2), .card:nth-child(2):before{
+    background: #ff4f4f;
+
+}
+.card:nth-child(3), .card:nth-child(3):before{
+    background: #ffb84f;
+
+}
+.card:nth-child(4), .card:nth-child(4):before{
+    background: #3dca5c;
+
+}
+.card:nth-child(5), .card:nth-child(5):before{
+    background: #565252;
+
+}
+
+.card:nth-child(even) .card-body:before{
+    content: '';
+    position: absolute;
+    left: -12%;
+    top: 0;
+    width: 0px;
+    height: 110%;
+    border: 1px dashed black;
+    z-index: -1;
+}
+.card-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.card-detail{
+    font-family: serif;
+    font-size: 19px;
+}
+
